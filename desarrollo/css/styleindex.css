@@ -1,0 +1,30 @@
+section{
+    text-align: justify !important;
+    max-width: 90%;
+    margin-left: 5vw;
+}
+
+section div h1 {
+    text-align: center;
+    color: #F26716;
+    font-size: 20px;
+}
+section img {
+    width: 50vw;
+    margin-top: 0vw;
+    max-width: 50vw;
+    display: block;
+}
+section p {
+    font-size: 18px;
+    font-family: "Arial";
+    width: auto;
+    max-width: auto;
+}
+section div {
+    margin-left: 3%;
+    font-family: "Arial";
+}
+section h2, section p {
+    margin-bottom: 15px;
+}
