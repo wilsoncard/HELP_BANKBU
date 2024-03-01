@@ -61,58 +61,58 @@
     </nav>
 
     <section>
-        <div  > 
-            <table >
+        <div> 
+            <table>
               <tr> 
-                <td ><div > 
+                <td><div> 
                     <p  class="TITLE">Reglas</p>
                     </div></td>
               </tr>
             </table>
             <p class="PARRAFO">Mediante esta opci&oacute;n, la entidad define las diferentes reglas que pueden ser utilizadas por el autorizador para aprobar, negar o referir una autorizaci&oacute;n, seg&uacute;n se encuentren <a href="COH_031B.html" class="LINK2">asociadas</a> con los diferentes <a href="MEH_002B.html" class="LINK2">productos</a> cr&eacute;dito. </p>
             <p class="PARRAFO">El formulario contiene un filtro que le permite al usuario consultar la   informaci&oacute;n espec&iacute;fica por nombre de la regla, por la acci&oacute;n de la regla (aprobar, negar o referir), por el tipo de regla, por el estado (activa, inactiva) o por vigencia inicial / final. Por defecto, al ingresar al   formulario este trae todas las reglas existentes en la base de datos.</p>
-            <p class="TITLE"><img src="../img/COF_030B.PNG" alt=""469" height="155"></p>
+            <p class="TITLE"><img src="../img/COF_030B.PNG" alt=""469" ></p>
             <p  class="PARRAFO">El formulario contiene las opciones Actualizar, Eliminar y
             Adicionar. Contiene adem&aacute;s un hiperv&iacute;nculo denominado <a href="COH_030B1.html" class="LINK2">Definici&oacute;n de reglas</a>, desde donde se parametriza la estructura o contenido de la regla; el campo <em>Definici&oacute;n de reglas</em> le indica al usuario para cada una de las reglas creadas si &eacute;stas ya tienen o no definida su estructura, lo que es requisito indispensable para poderla <a href="COH_031B.html" class="LINK2">asociar</a> posteriormente con los productos.</p>
             <p class="TITLE"><img src="../img/COF_030B1.PNG"808" height="391"></p>
             
-            <p ><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca 
+            <p><span class="SUBTITULO">Adicionar:</span> Si el usuario invoca 
               la opci&oacute;n Adicionar se despliega un formulario con los siguientes campos<span >:</span></font></p>
             <p class="TITLE"><img src="../img/COF_030B2.PNG"396" height="280"></p>
             
             
-            <table >
-              <tr > 
+            <table>
+              <tr> 
                 <td class="titletable"><p class="SUBTITULO"><b>Nombre</b></p></td>
                 <td><p class="PARRAFO">Campo alfanum&eacute;rico de hasta 30 caracteres, obligatorio, en el cual se registra el nombre con el cual se va a identificar la regla. </p></td>
               </tr>
-              <tr > 
+              <tr> 
                 <td class="titletable"><p class="SUBTITULO">Acci&oacute;n</p></td>
                 <td><p class="PARRAFO">Este campo tipo combo, obligatorio, se selecciona entre <em>Aprobar, Negar</em> o <em>Referir</em> la acci&oacute;n que determina la respuesta del autorizador, en caso que la tarjeta que se est&aacute; evaluando cumpla con la s&iacute;ntaxis de la regla. </p></td>
               </tr>
-              <tr > 
+              <tr> 
                 <td class="titletable"><p class="SUBTITULO">Definitivo</p></td>
                 <td><p class="PARRAFO" >Campo obligatorio que se habilita &uacute;nicamente cuando en el campo acci&oacute;n se selecciona la opci&oacute;n 'Aprobar' y que contiene un combo con las opciones <em>Si</em> y <em>No. </em></span><span >Cuando se selecciona</span><span class="PARRAFO"><em> Si,  </em>le indica al sistema que si la tarjeta que se est&aacute; evaluando cumple con la sintaxis de la regla debe tomar la respuestas como definitiva y no continuar evaluando las dem&aacute;s reglas <a href="COH_031B.html" class="LINK2">asociadas</a> al producto en caso que las hubiere. Si se selecciona <em>No</em>, indica que se deben seguir evaluando las dem&aacute;s reglas.</span> Si la acci&oacute;n es diferente a <em>Aprobar</em>, este campo se oculta autom&aacute;ticamente en el formulario. </p></td>
               </tr>
-              <tr > 
+              <tr> 
                 <td class="titletable"  ><p class="SUBTITULO">Tipo</p></td>
                 <td><p class="PARRAFO">En este campo no obligatorio se puede selecci0nar entre <em>Tipo 1, Tipo 2</em> o <em>Tipo 3</em> para darle una clasificaci&oacute;n a las reglas </p></td>
               </tr>
-              <tr > 
+              <tr> 
                 <td class="titletable"><p class="SUBTITULO">Estado</p></td>
                 <td><p class="PARRAFO">Campo obligatorio tipo combo, en el cual se selecciona entre <em>Activa</em> o <em>Inactiva</em> el estado de la regla. El sistema solo evaluar&aacute; aquellas reglas que adem&aacute;s de estar <a href="COH_031B.html" class="LINK2">asociadas</a> al producto se encuentren en estado <em>Activa</em>. </p></td>
               </tr>
-              <tr > 
+              <tr> 
                 <td class="titletable"><p class="SUBTITULO">Vigencia inicial </p></td>
                 <td><p class="PARRAFO" >En este campo no obligatorio, la entidad puede determinar a partir de que fecha tiene validez o aplicaci&oacute;n la regla. El sistema solo evaluar&aacute; aquellas reglas que adem&aacute;s de estar <a href="COH_031B.html" class="LINK2">asociadas</a> al producto y encontrarse en estado <em>Activa, </em></span><span >se encuentren vigentes al momento de solicitar la autorizaci&oacute;n. </span><span >Utiliza formato YYYY-MM-DD</span></p></td>
               </tr>
-              <tr >
+              <tr>
                 <td class="SUBTITULO" >Vigencia final </td>
-                <td><div >Campo no obligatorio, en el que la entidad puede determinar hasta que fecha tiene validez o aplicaci&oacute;n la regla. El sistema solo evaluar&aacute; aquellas reglas que adem&aacute;s de estar <a href="COH_031B.html" class="LINK2">asociadas</a> al producto y encontrarse en estado <em>Activa, </em><span >se encuentren vigentes al momento de solicitar la autorizaci&oacute;n. Utiliza formato YYYY-MM-DD . </span></div></td>
+                <td><div>Campo no obligatorio, en el que la entidad puede determinar hasta que fecha tiene validez o aplicaci&oacute;n la regla. El sistema solo evaluar&aacute; aquellas reglas que adem&aacute;s de estar <a href="COH_031B.html" class="LINK2">asociadas</a> al producto y encontrarse en estado <em>Activa, </em><span >se encuentren vigentes al momento de solicitar la autorizaci&oacute;n. Utiliza formato YYYY-MM-DD . </span></div></td>
               </tr>
-              <tr >
+              <tr>
                 <td class="SUBTITULO" >Mensaje negaci&oacute;n / referido </td>
-                <td><div >Este campo obligatorio contiene lista de valores de la cual se selecciona el <a href="COH_014B.html" class="LINK2">c&oacute;digo de respuesta</a> que el autorizador debe enviar en caso que de acuerdo con las validaciones de la tarjeta la autorizaci&oacute;n deba ser negada o referida. </div></td>
+                <td><div>Este campo obligatorio contiene lista de valores de la cual se selecciona el <a href="COH_014B.html" class="LINK2">c&oacute;digo de respuesta</a> que el autorizador debe enviar en caso que de acuerdo con las validaciones de la tarjeta la autorizaci&oacute;n deba ser negada o referida. </div></td>
               </tr>
             </table>
             <p  src="../img/MEF_002E5.PNG">&nbsp;</p>
@@ -143,5 +143,4 @@
 
 
 </footer>
-
 </html>

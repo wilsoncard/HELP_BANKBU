@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +8,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
 </head>
-
 <body>
-
   <header>
     <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
     <div id="menuBtn">
@@ -66,7 +63,7 @@
         <tr>
           <td>
             <div>
-              <p class="TITLE">Registro de Autorizaciones</p>
+              <p class="TITLE">Registro de autorizaciones</p>
             </div>
           </td>
         </tr>
@@ -78,11 +75,8 @@
         est&eacute; fuera de servicio. Las &uacute;nicas autorizaciones posibles de
         registrar en esta forma son aquellas que deban darse a transacciones de ventas
         o avances.</p>
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> El formulario cuenta
-        con un filtro inicial de b&uacute;squeda, necesario para la consulta de la
-        informaci&oacute;n:</p>
-      <p class="TITLE"><img src="../img/COF_009B.PNG" 710" height="191"></p>
-
+      <p class="PARRAFO"><span class="SUBTITULO">Datos autorización: </span> El sistema verifica que todos los campos contengan datos, por ser obligatorios, luego de lo cual, permite avanzar mediante el botón especial Cargar información.:</p>
+      <p class="TITLE"><img src="../img/COF_009B.PNG"></p>
       <table>
         <tr>
           <td class="titletable">
@@ -90,11 +84,7 @@
                   tarjeta </span></b></p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              este campo obligatorio se captura el n&uacute;mero de tarjeta del cliente a quien
-              se le otorgar&aacute; la autorizaci&oacute;n; los campos correspondientes
-              al nombre e identificaci&oacute;n los llenar&aacute; el sistema al momento
-              de validar el n&uacute;mero de tarjeta.</p>
+            <p class="PARRAFO">Campo obligatorio en el que se debe ingresar el número de la tarjeta del cliente para la que se gestiona la autorización. Al momento de activar el botón especial Cargar información, el sistema valida que el dato ingresado exista, si el número es errado, retorna el mensaje correspondiente.</p>
           </td>
         </tr>
         <tr>
@@ -103,9 +93,7 @@
                 </span></b>transacci&oacute;n</p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              este campo obligatorio se registra el monto de la transacci&oacute;n que se est&aacute;
-              autorizando.</p>
+            <p class="PARRAFO">Campo obligatorio, que en un máximo de doce enteros y dos decimales, debe contener el monto de la autorización que se está gestionando.</p>
           </td>
         </tr>
         <tr>
@@ -114,12 +102,9 @@
                 </span></b></p>
           </td>
           <td>
-            <p class="PARRAFO">Campo obligatorio
-              con lista de valores poblada previamente en la opci&oacute;n <a href="NUH_027B.html"
+            <p class="PARRAFO"> Campo obligatorio en el que se puede digitar o seleccionar de la lista de valores provista, y poblada previamente en la opción <a href="NUH_027B.html"
                 class="LINK2">or&iacute;genes
-                de transacciones</a> de las tablas reservadas del m&oacute;dulo N&uacute;cleo,
-              de la cual la entidad selecciona en el momento de registrar la autorizaci&oacute;n,
-              la clase de transacci&oacute;n que se autoriza realizar al cliente.</p>
+                de transacciones</a> para el origen 8 AUTORIZACIONES NORMALES, en la ruta Núcleo / Configuración de parámetros / Parámetros de operación, el código de la clase de transacción para la que se gestiona la autorización. Si el código digitado no hace parte de la lista, el sistema notifica que ese dato no se encuentra.</p>
           </td>
         </tr>
         <tr>
@@ -127,10 +112,9 @@
             <p class="SUBTITULO"><b>Establecimiento</b></p>
           </td>
           <td>
-            <p class="PARRAFO">Si
-              la entidad desea realizar la consulta de las autorizaciones por c&oacute;digo
-              de establecimiento, en este campo obligatorio se captura su c&oacute;digo de identificaci&oacute;n,
-              despleg&aacute;ndose el nombre del mismo.</p>
+            <p class="PARRAFO">Campo obligatorio en el que se puede digitar o seleccionar de la lista de valores provista, y poblada previamente en la opción
+              <a href="ESH_006B.html">Información de establecimientos,</a> en la ruta Núcleo / Información cliente, el código del comercio en el que se va a efectuar la transacción para la que se gestiona la autorización. Si el código digitado no hace parte de la lista, el sistema notifica que ese dato no se encuentra. Si el código existe, se despliega el nombre del mismo.
+            </p>
           </td>
         </tr>
         <tr>
@@ -138,20 +122,14 @@
             <p class="SUBTITULO"><b>Moneda</b></p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              obligatorio con lista de valores de la que la entidad selecciona la clase de <a href="NUH_005B.html"
-                class="LINK2">moneda</a>
-              sobre la cual se otorga la autorizaci&oacute;n.</p>
+            <p class="PARRAFO">Moneda
+              Campo obligatorio en el que se puede digitar o seleccionar de la lista de valores provista, y poblada previamente en la opción  <a href="NUH_005B.html"
+                class="LINK2">monedas</a> en la ruta Núcleo / Configuración de parámetros / Parámetros generales, el código de la moneda en que se denomina la transacción para la que se gestiona la autorización. Si el código digitado no hace parte de la lista, el sistema notifica que ese dato no se encuentra. Si el código existe, se despliega el nombre de la misma.</p>
           </td>
         </tr>
       </table>
-
-      <p class="PARRAFO">Al <em>cargar la informaci&oacute;n</em> a trav&eacute;s
-        del bot&oacute;n, se muestra un formulario que contiene las opciones Proceso
-        autorizaci&oacute;n y Cancelar. Adicionalmente, cuenta con un v&iacute;nculo
-        que conduce al formulario de Estad&iacute;sticas.</p>
-      <p class="TITLE"><img src="../img/COF_009B1.PNG" 645" height="360"></p>
-
+      <p class="PARRAFO">Al cargar la información a través del botón especial, se muestra un formulario que contiene un enlace al formulario Estadísticas, tres bloques de datos, y los botones Proceso Autorización y Cancelar. </p>
+      <p class="TITLE"><img src="../img/COF_009B1.PNG" ></p>
       <table>
         <tr>
           <td class="titletable">
@@ -159,9 +137,7 @@
                 tarjeta </b></p>
           </td>
           <td>
-            <p class="PARRAFO">Muestra
-              el n&uacute;mero de tarjeta ingresado de la autorizaci&oacute;n que
-              se dese crear.</p>
+            <p class="PARRAFO">Muestra el número de tarjeta enmascarado (si aplica), para la que se está gestionando la autorización.</p>
           </td>
         </tr>
         <tr>
@@ -170,8 +146,7 @@
                 pl&aacute;stico </b></p>
           </td>
           <td>
-            <p class="PARRAFO">Muestra
-              el nombre del cliente de la tarjeta.</p>
+            <p class="PARRAFO">Muestra el nombre del cliente como aparece en el plástico de la tarjeta.</p>
           </td>
         </tr>
         <tr>
@@ -180,8 +155,7 @@
               identificaci&oacute;n <b><span> </span></b></p>
           </td>
           <td>
-            <p class="PARRAFO">Contiene
-              el tipo documento de identificaci&oacute;n del tarjetahabiente.</p>
+            <p class="PARRAFO">Contiene la abreviatura y nombre del tipo de documento de identificación del tarjetahabiente.</p>
           </td>
         </tr>
         <tr>
@@ -190,8 +164,7 @@
               identificaci&oacute;n <b><span> </span></b></p>
           </td>
           <td>
-            <p class="PARRAFO">Contiene
-              el n&uacute;mero de documento de identificaci&oacute;n del tarjetahabiente.</p>
+            <p class="PARRAFO">Contiene el número del documento de identificación del tarjetahabiente.</p>
           </td>
         </tr>
         <tr>
@@ -200,8 +173,7 @@
                 vencimiento </b></p>
           </td>
           <td>
-            <p class="PARRAFO">Muestra
-              la fecha de vencimiento de la tarjeta capturada previamente.</p>
+            <p class="PARRAFO">Muestra la fecha de vencimiento, enmascarada (si aplica), de la tarjeta para la que se está gestionando la autorización.</p>
           </td>
         </tr>
         <tr>
@@ -209,12 +181,7 @@
             <p class="SUBTITULO"><b>Transacci&oacute;n</b></p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              con lista de valores poblada previamente en la opci&oacute;n <a href="NUH_027B.html"
-                class="LINK2">or&iacute;genes
-                de transacciones</a> de las tablas reservadas del m&oacute;dulo N&uacute;cleo,
-              de la cual la entidad selecciona en el momento de registrar la autorizaci&oacute;n,
-              la clase de transacci&oacute;n que se autoriza realizar al cliente.</p>
+            <p class="PARRAFO">Contiene el código y nombre de la transacción para la que se está gestionando la autorización.</p>
           </td>
         </tr>
         <tr>
@@ -222,10 +189,7 @@
             <p class="SUBTITULO"><b>Moneda</b></p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              con lista de valores de la que la entidad selecciona la clase de <a href="NUH_005B.html"
-                class="LINK2">moneda</a>
-              sobre la cual se otorga la autorizaci&oacute;n.</p>
+            <p class="PARRAFO">Contiene el código y nombre de la transacción en que se denomina la transacción para la que se gestiona la autorización.</p>
           </td>
         </tr>
         <tr>
@@ -234,9 +198,7 @@
                 transacci&oacute;n</b></p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              este campo se registra el monto de la transacci&oacute;n que se est&aacute;
-              autorizando.</p>
+            <p class="PARRAFO">Campo que muestra el monto de la autorización que se está gestionando.</p>
           </td>
         </tr>
         <tr>
@@ -244,9 +206,7 @@
             <p class="SUBTITULO"><b>Establecimiento</b></p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              en el cual se registra el c&oacute;digo del establecimiento en d&oacute;nde
-              se est&aacute; realizando la transacci&oacute;n.</p>
+            <p class="PARRAFO">Campo que muestra el código y nombre comercial del establecimiento en el que se va a efectuar la transacción para la que se gestiona la autorización.</p>
           </td>
         </tr>
         <tr>
@@ -254,10 +214,7 @@
             <p class="SUBTITULO"><b>Horario</b></p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              que contiene informaci&oacute;n del horario en que el establecimiento
-              est&aacute; autorizado para operar normalmente; este dato ayuda a la
-              entidad a detectar comportamientos fraudulentos con el uso de la tarjeta.</p>
+            <p class="PARRAFO">  Campo que contiene información del horario en que el establecimiento está autorizado para operar normalmente; este dato ayuda a la entidad a detectar comportamientos fraudulentos con el uso de la tarjeta.</p>
           </td>
         </tr>
         <tr>
@@ -266,9 +223,7 @@
               identificaci&oacute;n</p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              este campo se muestra el c&oacute;digo de identificaci&oacute;n del
-              establecimiento en d&oacute;nde se est&aacute; realizando la transacci&oacute;n.</p>
+            <p class="PARRAFO">Campo que ilustra el número de identificación del establecimiento en donde se está realizando la transacción.</p>
           </td>
         </tr>
         <tr>
@@ -277,9 +232,7 @@
                 social </b></p>
           </td>
           <td>
-            <p class="PARRAFO">Muestra
-              el nombre con el cual se encuentra registrado el establecimiento ante
-              la C&aacute;mara de Comercio o la entidad que cumpla esa funci&oacute;n.</p>
+            <p class="PARRAFO">Muestra el nombre con el cual se encuentra registrado el establecimiento ante la Cámara de Comercio o la entidad que cumpla esa función.</p>
           </td>
         </tr>
         <tr>
@@ -287,10 +240,7 @@
             <p class="SUBTITULO"><b>Servicio</b></p>
           </td>
           <td>
-            <p class="PARRAFO">Despliega
-              el c&oacute;digo y nombre del servicio asociado al comercio a trav&eacute;s
-              del cual se realiza la utilizaci&oacute;n para la que se registra la
-              autorizaci&oacute;n.</p>
+            <p class="PARRAFO">Despliega el código y nombre del servicio asociado al comercio a través del cual se realiza la utilización para la que se solicita la autorización.</p>
           </td>
         </tr>
         <tr>
@@ -298,22 +248,14 @@
             <p class="SUBTITULO"><b>Convenio</b></p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              de salida que muestra el c&oacute;digo y el nombre del convenio al que
-              pertenece la tarjeta cuando es de marca privada</p>
+            <p class="PARRAFO">Campo de salida que muestra el código y el nombre del convenio al que pertenece la tarjeta, aplica para cuando la misma es de marca privada.</p>
           </td>
         </tr>
       </table>
       <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Proceso
-            autorizaci&oacute;n:</span> A trav&eacute;s de este bot&oacute;n el sistema
-          inicia el proceso de generar la autorizaci&oacute;n, y muestra el resultado
-          en el bloque Informaci&oacute;n de la autorizaci&oacute;n.</span></p>
-      <p class="PARRAFO">En este bloque, una vez capturada la informaci&oacute;n
-        requerida para la autorizaci&oacute;n, se muestra la respuesta arrojada por
-        la solicitud de autorizaci&oacute;n una vez se apliquen las correspondientes
-        validaciones.</p>
-      <p class="TITLE"><img src="../img/COF_009B2.PNG" 655"></p>
-
+            autorizaci&oacute;n:</span>  Al activar este botón especial, el sistema realiza las validaciones correspondientes y genera la respuesta a la misma.</span></p>
+      <p class="PARRAFO">En este bloque Información de la Autorización, se muestra la respuesta del sistema a la solicitud de la autorización.</p>
+      <p class="TITLE"><img src="../img/COF_009B2.PNG"></p>
       <table>
         <tr>
           <td class="titletable">
@@ -321,9 +263,7 @@
                 respuesta </b></p>
           </td>
           <td>
-            <p class="PARRAFO">Corresponde
-              al c&oacute;digo y descripci&oacute;n de la respuesta a la solicitud
-              de autorizaci&oacute;n.</p>
+            <p class="PARRAFO">Muestra tanto el código como la descripción de la respuesta dada por el sistema a la solicitud de autorización.</p>
           </td>
         </tr>
         <tr>
@@ -332,10 +272,7 @@
               autorizaci&oacute;n</p>
           </td>
           <td>
-            <p class="PARRAFO">En
-              caso de que la solicitud de autorizaci&oacute;n haya sido exitosa, en
-              este campo aparece el n&uacute;mero que fue asignado como aprobaci&oacute;n
-              de la misma.</p>
+            <p class="PARRAFO">En caso de que la solicitud de autorización haya sido exitosa, en este campo se muestra el número, diferentes a ceros, que le fue asignado por el sistema. En otros casos se muestran solo ceros.</p>
           </td>
         </tr>
       </table>
@@ -343,14 +280,13 @@
       <p class="PARRAFO"><span class="SUBTITULO">Estad&iacute;sticas:</span>
         Permite conocer las utilizaciones realizadas a trav&eacute;s de la l&iacute;nea
         de cr&eacute;dito a una fecha determinada.</p>
-      <p class="TITLE"><img src="../img/COF_009B3.PNG" 644" height="173"></p>
+      <p class="TITLE"><img src="../img/COF_009B3.PNG"></p>
 
       <p class="PARRAFO"><span class="PARRAFO"><span class="SUBTITULO">Detalle:</span>
           A trav&eacute;s de este bot&oacute;n el sistema inicia el proceso de generar
           la autorizaci&oacute;n, y muestra el resultado en un nuevo bloque que se muestra
           en la parte inferior del formulario: Informaci&oacute;n de la autorizaci&oacute;n.</span></p>
-      <p class="TITLE"><img src="../img/COF_009B4.PNG" 646" height="333"></p>
-
+      <p class="TITLE"><img src="../img/COF_009B4.PNG"></p>
       <table>
         <tr>
           <td class="titletable">
@@ -457,9 +393,5 @@
   <p>OpenCard SAS</p>
   <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
   <p>Tel (57) 601 - 313 37 75  <a href="http://www.opencard.com" target="_blank">www.opencard.com</a></p>
-
-
-
 </footer>
-
 </html>

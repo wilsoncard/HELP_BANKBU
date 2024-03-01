@@ -33,7 +33,7 @@ section div table {
   /* Estilo adicional para las celdas de las tablas, si es necesario */
   table td, th{
     font-family: 'Arial';
-    padding: 0.7vw; /* Espaciado interno de las celdas */
+    padding: 0.5vw; /* Espaciado interno de las celdas */
     text-align: justify; /* Alineación del texto en las celdas */
   }
 section h1 {

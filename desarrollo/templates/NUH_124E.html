@@ -60,10 +60,10 @@
     </nav>
 
     <section>
-        <div  > 
-            <table >
+        <div> 
+            <table>
               <tr> 
-                <td ><div > 
+                <td><div> 
                     <p  class="TITLE">Asociaci&oacute;n a  conexiones, llaves y archivos a grupos </p>
                   </div></td>
               </tr>
@@ -75,63 +75,63 @@
             <p class="PARRAFO" >Al activar el enlace <em>Adicionar</em>, el sistema despliega el  paso <em>Conexiones y Llaves</em> del  Wizard de dos momentos:</span></p>
             <p class="TITLE"><img src="../img/NUF_124E2.PNG"716" height="396"></p>
             <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table >
-              <tr >
+            <table>
+              <tr>
                 <td class="titletable" ><p class="SUBTITULO"><b>Tipo de Grupo
                 </b></p></td>
                 <td><p  class="PARRAFO">Campo obligatorio que posee lista de valores tipo combo,  con los valores <em>Entrada </em>o <em>Salida</em> de la que la entidad debe seleccionar, para el grupo a asociar, a cual de ellas corresponde.</p></td>
               </tr>
-              <tr >
+              <tr>
                <td class="titletable" ><p class="SUBTITULO"><b>Grupo
                 </b></p></td>
                 <td><p  class="PARRAFO">Campo obligatorio que posee lista de valores tipo combo,  la cual se actualiza de forma din&aacute;mica dependiendo de lo seleccionado en el campo <em>Tipo de Grupo</em> con los valores poblados en el formulario <a href="NUH_121E.html" class="LINK2">Par&aacute;metros Grupos Entrada y Salida</a>. </p></td>
               </tr>
-              <tr >
+              <tr>
               <td class="titletable" ><p class="SUBTITULO"><b>Llave p&uacute;blica validar firma
                 </b></p></td>
                 <td><p  class="PARRAFO">Campo obligatorio que posee lista de valores tipo combo,  con los valores poblados en el formulario <a href="NUH_122E.html" class="LINK2">Par&aacute;metros Llaves de cifrado PGP </a>debe haber coherencia entre el tipo de grupo y la llave p&uacute;blica a utilizar, esto es, si se trata de un grupo de salida que requiera encripci&oacute;n se debe asociar la llave p&uacute;blica para tal fin. </p></td>
               </tr>
-              <tr >
+              <tr>
                 <td class="titletable" ><p class="SUBTITULO"><b>Ruta archivos de entrada
                 </b></p></td>
                 <td   class="PARRAFO" ><p  class="PARRAFO">Campo alfanum&eacute;rico de 250 posiciones, cuya obligatoriedad, depende de  que el valor del campo <em>Tipo de Grupo</em> corresponda a <em>Entrada</em>, de aplicar, debe contener la ruta completa, del Servidor origen, en la que se deben ubicar los archivos de entrada.</span></p></td>
               </tr>
-              <tr >
+              <tr>
                 <td class="titletable" ><p class="SUBTITULO"><b>Ruta archivos de salida
                 </b></p></td>
                <td   class="PARRAFO" ><p  class="PARRAFO">Campo alfanum&eacute;rico de 250 posiciones, cuya obligatoriedad, depende de  que el valor del campo <em>Tipo de Grupo</em> corresponda a <em>Salida</em>, de aplicar, debe contener la ruta completa, del Servidor de destino, en la que se deben ubicar los archivos de salida.</p></td>
               </tr>
-              <tr >
+              <tr>
                  <td class="titletable" ><p class="SUBTITULO"><b>Ruta archivos procesados
                 </b></p></td>
                <td   class="PARRAFO" ><p  class="PARRAFO">Campo alfanum&eacute;rico de 250 posiciones, no  obligatorio, para uso futuro, solo se despliega cuando el tipo de grupo corresponde a <em>Entrada</em>, en el que quedan almacenados los archivos iniciales tomados del Servidor de origen. </p></td>
               </tr>
-              <tr >
+              <tr>
                  <td class="titletable" ><p class="SUBTITULO"><b>Conexi&oacute;n
                 </b></p></td>
               <td   class="PARRAFO" ><p  class="PARRAFO">Campo obligatorio que posee lista de valores tipo combo,  con los valores poblados en el formulario <a href="NUH_123E.html" class="LINK2">Par&aacute;metros conexi&oacute;n al servidor</a>, a trav&eacute;s del cual se determina el protocolo de transmisi&oacute;n a ser utilizado. </p></td>
               </tr>
-              <tr >
+              <tr>
               <td class="titletable" ><p class="SUBTITULO"><b>Cifrar / Descifrar
                 </b></p></td>
                 <td   class="PARRAFO" ><p  class="PARRAFO">Campo obligatorio que posee lista de valores tipo combo con los valores <em>Si</em> y <em>No</em>, se activa <em>Cifrar</em> cuando se trata de archivos de <em>Salida</em> y <em>Descifrar</em> para cuando se habla de archivos de <em>Entrada</em>. </p></td>
               </tr>
-              <tr >
+              <tr>
                 <td class="titletable" ><p class="SUBTITULO"><b>Comando de invocaci&oacute;n
                 </b></p></td>
                 <td   class="PARRAFO" ><p  class="PARRAFO">Campo alfanum&eacute;rico de 20 posiciones, cuya obligatoriedad, depende de  que el valor del campo <em>Cifrar / Descifrar</em> corresponda a <em>Si</em>, en cuyo caso debe contener el comando del sistema operativo de invocaci&oacute;n  <em>gpg</em> (incluye un espacio a la derecha), para cuando se trata de un archivo de salida o el comando <em>gpg --batch --no-tty --yes</em> (incluye un espacio a la derecha), para cuando se trata de un archivo de entrada. </p></td>
               </tr>
-              <tr >
+              <tr>
               <td class="titletable" ><p class="SUBTITULO"><b>Comando frase o recipiente
                 </b></p></td>
                 <td   class="PARRAFO" ><p  class="PARRAFO">Campo alfanum&eacute;rico de 50 posiciones, cuya obligatoriedad, depende de  que el valor del campo <em>Cifrar / Descifrar</em> corresponda a <em>Si</em>, en cuyo caso debe contener el comando del sistema operativo de la  clave <em>--recipient</em> para cuando se trata de un archivo de salida o el comando <em>--passphrase</em>, para cuando se trata de un archivo de entrada. </p></td>
               </tr>
-              <tr >
+              <tr>
               <td class="titletable" ><p class="SUBTITULO"><b>Comando salida
                 </b></p></td>
                 <td   class="PARRAFO" ><p  class="PARRAFO">Campo alfanum&eacute;rico de 20 posiciones, cuya obligatoriedad, depende de  que el valor del campo<em> Cifrar / Descifrar</em> corresponda a <em>Si</em>, en cuyo caso debe contener el comando del sistema operativo de salida <em>--output</em>, indistintamente que se trate de un archivo de entrada o de salida. </p></td>
               </tr>
-              <tr >
+              <tr>
                 <td class="titletable" ><p class="SUBTITULO"><b>Comando ejecuci&oacute;n
                 </b></p></td>
                 <td   class="PARRAFO" ><p  class="PARRAFO">Campo alfanum&eacute;rico de 20 posiciones, cuya obligatoriedad, depende de  que el valor del campo<em>Cifrar / Descifrar</em> corresponda a <em>Si</em>, en cuyo caso debe contener el comando del sistema operativo<em> </em>de ejecuci&oacute;n <em>--encrypt</em> para cuando se trata de un archivo de salida o el comando <em>--decrypt</em>, para cuando se trata de un archivo de entrada.</9></td>
@@ -140,14 +140,14 @@
             <p class="PARRAFO">En el segundo momento o paso del Wizard, <em>Asociaci&oacute;n de Archivos</em>, de la <em>Adici&oacute;n</em>, se despliega el siguiente formulario:</p>
             <p class="TITLE"><img src="../img/NUF_124E3.PNG"443" height="348"></p>
             <p  class="TITLE">Descripci&oacute;n de campos</p>
-            <table >
-              <tr >
+            <table>
+              <tr>
                 <td class="titletable" ><p class="SUBTITULO"><b>Archivos sin asociar </b></p></td>
-                <td ><p  class="PARRAFO">
+                <td><p  class="PARRAFO">
                   Campo que posee lista de valores tipo combo,  que contiene la relaci&oacute;n de los diferentes procesos u objetos l&oacute;gicos parametrizados en el formulario Definici&oacute;n grupos de procesos, en <em>N&uacute;cleo / Procesos</em>, que se actualiza din&aacute;micamente excluyendo aquellos procesos que fueron asociados a otras combinaciones de conexi&oacute;n / llave / archivos, en &eacute;ste mismo formulario y, de la cual se deben seleccionar todos aquellos procesos para los que coincidan  las siguientes dos condiciones: primera, ser de salida o de entrada y, segunda, transferirse en claro o cifrados.La relaci&oacute;n  muestra: Descripci&oacute;n del objeto l&oacute;gico, Secuencia dentro del Grupo y Nombre del Objeto l&oacute;gico. 
                 </p></td>
               </tr>
-              <tr >
+              <tr>
               <td class="titletable" ><p class="SUBTITULO"><b>Archivos asociados al Grupo
                 </b></p></td>
                 <td><p  class="PARRAFO">Campo que inicialmente aparece en blanco y el cual, mediante los botones especiales ubicados entre ambos campos, permite mover uno o todos los registros de un campo hacia el otro, teniendo presente la pauta seg&uacute;n la cual, todos los procesos aqu&iacute; relacionados deben cumplir las dos condiciones indicadas en el campo Archivos sin asociar, para guardar dicha configuraci&oacute;n basta con activar el bot&oacute;n especial de la bandera ubicado en la parte inferior derecha. </p></td>
@@ -159,7 +159,7 @@
             
              <p class="TITLE"><img src="../img/NUF_124E3.PNG"></p>
             
-            <div >
+            <div>
         </section>
     <script src="../js/menu.js"></script>
 

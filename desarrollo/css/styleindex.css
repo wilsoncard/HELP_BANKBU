@@ -9,6 +9,13 @@ section div h1 {
     color: #F26716;
     font-size: 20px;
 }
+.TITLE {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Arial';
+    font-size: 24px; /* Tamaño de fuente relativo */
+    color: #341C8C !important;
+}
 section img {
     width: 50vw;
     margin-top: 0vw;
