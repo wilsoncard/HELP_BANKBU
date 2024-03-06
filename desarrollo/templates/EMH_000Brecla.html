@@ -6,20 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
     <style>
-       section h1 {
+        footer {
+            position: fixed;
+        }
+        .TITLE:hover {
+            background-color: #f0f0f0;
+            color: #333;
             cursor: pointer;
         }
+        section li a {
+            color: #F26716;
+        }
 
-       section ul {
+        section ul {
             display: none;
         }
-        section p{
-        width: 625px;
-    }
+
+        section p {
+            width: 625px;
+        }
     </Style>
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="../css/style.css">
- <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
 </head>
 
 <body>
@@ -27,13 +36,13 @@
     <header>
         <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
         <div id="menuBtn">
-            <img class="TITLE"  src= "../img/menu.PNG" alt="Botón de Menú ">
+            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
         </div>
     </header>
     <nav>
         <ul>
             <li>
-                    <a href="../index.html" class="main-optionINICIO">INICIO</a>
+                <a href="../index.html" class="main-optionINICIO">INICIO</a>
             </li>
             <li>
                 <a href="NUH_INTB.html" class="main-optionINTRODUCCIÓN">INTRODUCCIÓN</a>
@@ -51,7 +60,7 @@
                 </ul>
             </li>
             <li>
-             <a href="#" class="main-option">EMISOR  ▼</a>
+                <a href="#" class="main-option">EMISOR ▼</a>
                 <ul>
                     <li><a href="EMH_000B.html">Productos</a></li>
                     <li><a href="EMH_000Bsoli.html">Solicitudes</a></li>
@@ -64,42 +73,43 @@
                     <li><a href="EMH_000Brecla.html">Reclamos</a></li>
                 </ul>
             </li>
- <li style="visibility: hidden">
+            <li style="visibility: hidden">
                 <a href="ACH_000B.html" class="main-option">ADQUIRIENTE</a>
             </li>
             <li style="visibility: hidden">
                 <a href="DBH_000B.html" class="main-option">TARJETA DEBITO</a>
-            </li> </ul>
+            </li>
+        </ul>
     </nav>
 
     <section>
         <div>
-            <p style="font-size: 30px;">Seleciona la opción que quieres consultar:</p>
-        <h1 onclick="toggleList('Reclamos')">Reclamos</p>
-        <ul id="Reclamos">
-        
-            <li><a href="RCH_001B.html">Tipos de reclamos</a></li>
-            <li><a href="RCH_002B.html">Roles</a></li>
-            <li><a href="RCH_003B.html">Gestores</a></li>
-            <li><a href="RCH_004B.html">Requisitos</a></li>
-            <li><a href="RCH_005B.html">Actividades</a></li>
-            <li><a href="RCH_006B.html">Reclamos</a></li>
-            <li><a href="RCH_007B.html">Atención de reclamos</a></li>
-            <li><a href="RCH_008B.html">Maestro de reclamos</a></li>
-            <li><a href="RCH_009B.html">Histórico de reclamos</a></li>
+            <p style="font-size: 28px;">Seleciona la opción que quieres consultar:</p>
+            <p class="TITLE" style="text-align: left;" onclick="toggleList('Reclamos')">Reclamos</p>
+            <ul id="Reclamos">
+
+                <li><a href="RCH_001B.html">Tipos de reclamos</a></li>
+                <li><a href="RCH_002B.html">Roles</a></li>
+                <li><a href="RCH_003B.html">Gestores</a></li>
+                <li><a href="RCH_004B.html">Requisitos</a></li>
+                <li><a href="RCH_005B.html">Actividades</a></li>
+                <li><a href="RCH_006B.html">Reclamos</a></li>
+                <li><a href="RCH_007B.html">Atención de reclamos</a></li>
+                <li><a href="RCH_008B.html">Maestro de reclamos</a></li>
+                <li><a href="RCH_009B.html">Histórico de reclamos</a></li>
             </ul>
 
-        <h1 onclick="toggleList('Lealtad')">Lealtad</p>
-        <ul id="Lealtad">
-            <li><a href="MEH_013B.html">Premios puntaje</a></li>
-            <li><a href="MEH_006B.html">Esquemas de puntaje</a></li>
-            <li><a href="MEH_011B.html">Comportamiento esquemas de puntaje</a></li>
-            <li><a href="SCH_065B.html">Puntajes por tarjeta</a></li>
-            <li><a href="MEH_014B.html">Redención de premios</a></li>
-            <li><a href="MEH_015B.html">Reversión de premios</a></li>
+            <p class="TITLE" style="text-align: left;" onclick="toggleList('Lealtad')">Lealtad</p>
+            <ul id="Lealtad">
+                <li><a href="MEH_013B.html">Premios puntaje</a></li>
+                <li><a href="MEH_006B.html">Esquemas de puntaje</a></li>
+                <li><a href="MEH_011B.html">Comportamiento esquemas de puntaje</a></li>
+                <li><a href="SCH_065B.html">Puntajes por tarjeta</a></li>
+                <li><a href="MEH_014B.html">Redención de premios</a></li>
+                <li><a href="MEH_015B.html">Reversión de premios</a></li>
             </ul>
-    
-            <h1 onclick="toggleList('Parámetros')"> Cobranzas Parámetros</p>
+
+            <p class="TITLE" style="text-align: left;" onclick="toggleList('Parámetros')"> Cobranzas Parámetros</p>
             <ul id="Parámetros">
                 <li><a href="CCH_001B.html">Operadores de cobro</a></li>
                 <li><a href="CCH_002B.html">Tipos de cobro</a></li>
@@ -112,50 +122,42 @@
                 <li><a href="CCH_009B.html">Comisiones</a></li>
                 <li><a href="CCH_011B.html">Tipos de compromisos</a></li>
                 <li><a href="CCH_012B.html">Agentes por zonas</a></li>
-                  
-            <li><a href="CCH_013B.html">Registro y actualización de clientes</a></li>
-            <li><a href="CCH_014B.html">Ingreso / Consulta de cobros</a></li>
-            <li><a href="CCH_015B.html">Actividades por agente de cobro</a></li>
-            <li><a href="CCH_016B.html">Actualización / Manejo de actividades</a></li>
-            <li><a href="CCH_017B.html">Reasignación de la cobranza</a></li>
-            <li><a href="CCH_018B.html">Pago y abono de honorarios</a></li>
-            <li><a href="CCH_019B.html">Consulta de actividades</a></li>
-            <li><a href="CCH_020B.html">Histórico de gestiones</a></li>
-                </ul>
-           
-          
-                <h1 onclick="toggleList('Agentes')">Agentes y promotores </p>
-                <ul id="Agentes">
-                    <li><a href="APH_001B.html">Actividades</a></li>
-                    <li><a href="APH_002B.html">Comisiones y metas</a></li>
-                    <li><a href="APH_003B.html">Deducciones</a></li>
-                    <li><a href="APH_004B.html">Deducciones por promotor</a></li>
-                    <li><a href="APH_005B.html">Supervisión de actividades</a></li>
-                    <li><a href="APH_009B.html">Actividades finalizadas</a></li>
-                    <li><a href="APH_006B.html">Actividades por promotor</a></li>
-                    <li><a href="APH_007B.html">Liquidación de comisiones</a></li>
-                    <li><a href="APH_008B.html">Consulta de estadísticas</a></li>
-                    </ul>
 
+                <li><a href="CCH_013B.html">Registro y actualización de clientes</a></li>
+                <li><a href="CCH_014B.html">Ingreso / Consulta de cobros</a></li>
+                <li><a href="CCH_015B.html">Actividades por agente de cobro</a></li>
+                <li><a href="CCH_016B.html">Actualización / Manejo de actividades</a></li>
+                <li><a href="CCH_017B.html">Reasignación de la cobranza</a></li>
+                <li><a href="CCH_018B.html">Pago y abono de honorarios</a></li>
+                <li><a href="CCH_019B.html">Consulta de actividades</a></li>
+                <li><a href="CCH_020B.html">Histórico de gestiones</a></li>
+            </ul>
 
-                </div>
-              <img #"margin-left: 10%; margin-top: 3%;" class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG" alt="Imagen de la empresa">
-
-    
+            <p class="TITLE" style="text-align: left;" onclick="toggleList('Agentes')">Agentes y promotores </p>
+            <ul id="Agentes">
+                <li><a href="APH_001B.html">Actividades</a></li>
+                <li><a href="APH_002B.html">Comisiones y metas</a></li>
+                <li><a href="APH_003B.html">Deducciones</a></li>
+                <li><a href="APH_004B.html">Deducciones por promotor</a></li>
+                <li><a href="APH_005B.html">Supervisión de actividades</a></li>
+                <li><a href="APH_009B.html">Actividades finalizadas</a></li>
+                <li><a href="APH_006B.html">Actividades por promotor</a></li>
+                <li><a href="APH_007B.html">Liquidación de comisiones</a></li>
+                <li><a href="APH_008B.html">Consulta de estadísticas</a></li>
+            </ul>
+        </div>
+        <img class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG" alt="Imagen de la empresa">
     </section>
     <script src="../js/menu.js"></script>
     <script src="../js/opciones.js"></script>
 </body>
 <footer>
     <div>
-        <img class="TITLE"  src= "../img/logo.PNG">
+        <img class="TITLE" src="../img/logo.PNG">
     </div>
     <p>OpenCard SAS</p>
     <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
-    <p>Tel (57) 601 - 313 37 75  <a href="http://www.opencard.com"
-            target="_blank">www.opencard.com</a></p>
-
-
+    <p>Tel (57) 601 - 313 37 75 <a href="http://www.opencard.com" target="_blank">www.opencard.com</a></p>
 
 </footer>
 </html>

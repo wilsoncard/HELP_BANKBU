@@ -7,4 +7,3 @@
             list.style.display = 'none';
         }
     }
-
