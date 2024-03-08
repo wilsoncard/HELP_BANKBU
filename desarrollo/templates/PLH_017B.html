@@ -33,7 +33,7 @@
           <li><a href="NUH_00B_proceso.html">Proceso</a></li>
           <li><a href="NUH_00B_inf.html">Inf. Cliente</a></li>
           <li><a href="NUH_00B_conta.html">Contabilidad</a></li>
-          <li style="visibility: hidden;"><a href="NUH_00B_audi.html">Auditoria</a></li>
+          <li style="visibility: hidden; display: none;"><a href="NUH_00B_audi.html">Auditoria</a></li>
 
         </ul>
       </li>
@@ -65,17 +65,14 @@
       <table>
 
 
-        <p class="TITLE">Consulta de plásticos enviados a mensajería</p>
+        <p class="TITLE">Consulta de plásticos en mensajería</p>
     </div>
     </td>
     </tr>
     </table>
-    <p class="PARRAFO">Mediante esta función se habilita la consulta de aquellos plásticos que ya pasaron por la etapa
-      de<em><a href="PLH_013B.html" > envío a mensajería.</a></em></span></p>
-    <p class="PARRAFO">Al ingresar a la opción, el usuario se encuentra con un filtro en el cual se diligencian los
-      datos que permitan especificar las tarjetas que se desea consultar, siendo obligatorio el diligenciamiento como
-      mínimo de uno de los filtros.</span><span class="PARRAFO"></span></p>
-    <p class="TITLE"><img src="../img/PLF_017E.PNG" 666"></p>
+    <p class="PARRAFO">Mediante esta función se habilita la selección de aquellos plásticos que, durante el proceso de las diferentes solicitudes, arriban a la etapa de generación de sobreflex de clave para asignarle el PIN (Personal Identification Number), dato requerido por el tarjetahabiente para hacer uso del plástico en cajeros y otros medios.</p>
+    <p class="PARRAFO">Al ingresar a la opción, el usuario se encuentra con un filtro en el cual se diligencian el o los datos que le permitan especificar los registros de los plásticos que desea consutar, siendo obligatorio el diligenciamento como mínimo de uno de los criterios.</p>
+    <p class="TITLE"><img src="../img/PLF_017E.PNG"></p>
 
     <p class="TITLE">Descripción de campos</p>
     <div>
@@ -125,7 +122,7 @@
       <table width=718 >
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Origen</span></b></p>
+            <p class="SUBTITULO"><b><span>Origen registro </span></b></p>
           </td>
           <td>
             <p class="PARRAFO">Campo tipo combo en el cual se selecciona el evento que dió origen a la solicitud de los
@@ -140,7 +137,7 @@
       <table >
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Solicitud</span></b></p>
+            <p class="SUBTITULO"><b><span>Secuencia solicitud</span></b></p>
           </td>
           <td>
             <p class="PARRAFO">En este campo numérico se puede ingresar el número de la solicitud específica para la
@@ -151,7 +148,7 @@
       <table >
         <tr>
           <td class="titletable">
-            <p class="SUBTITULO"><b><span>Modelo plástico </span></b></p>
+            <p class="SUBTITULO"><b><span>Modelo plástico (código y descripción) </span></b></p>
           </td>
           <td>
             <p class="PARRAFO">Campo con lista de valores que permite seleccionar el <span ><em><a
@@ -162,20 +159,16 @@
       </table>
     </div>
 
-    <p class="PARRAFO">Una vez seleccionados los criterios y utilizando el botón buscar, se despliega un nuevo
-      formulario en el que se muestran todos los registros que cumplen con las condiciones indicadas por el usuario
-      mostrando para cada uno de ellos el número de tarjeta, el nombre realzado en el plástico, el número del plástico y
-      la fecha de realce. </p>
+    <p class="PARRAFO">Si bien al invocarse el formulario, el sistema recupera todos los registros almacenados en la base de datos, y los muestra por bloques, en la parte inferior. Una vez seleccionados los criterios y utilizando el botón buscar, se refresca la información antes mostrada, dejándo únicamente aquellos registros de las tarjetas que cumplen con las condiciones indicadas por el usuario, ilustrando para cada uno de ellos: el número de tarjeta (enmascarado si aplica), el nombre realzado en el plástico, número plástico y la fecha/hora de realce (embosado).</p>
     <p class="PARRAFO">Es de aclarar que, en el caso que las tarjetas desplegadas correspondan a tipo débito generadas
       masivamente, el campo <em>Nombre plástico</em> se mostrará en blanco.</p>
     <p class="PARRAFO">El formulario solo cuenta con la opción <em>Detalle</em>. </p>
-    <p class="TITLE"><img src="../img/PLF_017E1.PNG" 743" height="457"></p>
+    <p class="TITLE"><img src="../img/PLF_017E1.PNG"></p>
 
     <p class="PARRAFO"><a name="BL_DETALLE"></a><span class="SUBTITULO"><span><b>Detalle</b>:</span></font></span><span>
-        si el actor selecciona algún registro e invoca la opción adicionar, se despliega un formulario con la
-        información completa del registro y en el cual ninguno de sus campos es modificable. </span></font>
+      si el usuario selecciona algún registro e invoca el enlace Detalle, se despliega un formulario con información más amplia del mismo, la cual es informativa por lo tanto no modificable. </span></font>
     </p>
-    <p class="TITLE"><img src="../img/PLF_017E2.PNG" 789" height="381"></p>
+    <p class="TITLE"><img src="../img/PLF_017E2.PNG"></p>
     <p class="TITLE">Descripción de campos</p>
     <div>
 
@@ -186,9 +179,7 @@
                   tarjeta </span></b></p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              en el que se despliega el n&uacute;mero de tarjeta para el cual se
-              est&aacute; consultando la informaci&oacute;n.</p>
+            <p class="PARRAFO">Campo en el que se despliega el número (enmascarado si aplica) de la tarjeta para el cual se está consultando la información..</p>
           </td>
         </tr>
         <tr>
@@ -472,9 +463,7 @@
                   vencimiento</span></b></p>
           </td>
           <td>
-            <p class="PARRAFO">Campo
-              que contiene la fecha hasta la cual tiene vigencia o validez el pl&aacute;stico
-              de acuerdo con lo parametrizado para el producto al que pertenece.</p>
+            <p class="PARRAFO">Campo que contiene la fecha (enmascarada si aplica) hasta la cual tendrá vigencia o validez el plástico de acuerdo con lo parametrizado para el producto al que pertenece.</p>
           </td>
         </tr>
 
@@ -564,5 +553,4 @@
 
   </footer>
 </body>
-
 </html>
