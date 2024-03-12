@@ -1,10 +1,13 @@
-section   {
+section {
     line-height: 1 vw;
     font-family: 'Arial';
     text-align: justify ;
     margin-top: 4vw;
     margin-left: 6vw; /* Ajuste para hacerlo más adaptable */
     margin-right: 5vw;
+}
+.divprincipal{
+    width: 100%;
 }
 li {
     list-style: none;
@@ -20,7 +23,7 @@ p+ul{
 }
 TABLE + p {
     margin-top: 1vw;
-  }
+}
 section div table {
     border-spacing: -1000px; /* Ajusta el valor según desees */
     width: 100%;
@@ -55,10 +58,10 @@ section h2, h3 {
     align-items: center;
     margin-top: 5vw;
     margin-right: auto;
-    margin-left:auto; /* Ajusta este valor según sea necesario para separar la imagen del texto */
-    width: 50%;
+    margin-left:0%; /* Ajusta este valor según sea necesario para separar la imagen del texto */
+    width: 70%;
     height: auto;
-    max-width: 60%; /* Hace que la imagen sea responsive */
+    max-width: 70%; /* Hace que la imagen sea responsive */
 }
 section img  {
     display: inline-block;

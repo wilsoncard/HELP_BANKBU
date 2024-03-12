@@ -5,34 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
     <style>
         footer {
             position: fixed;
-        }
-        .TITLE:hover {
-            background-color: #f0f0f0;
-            color: #333;
-            cursor: pointer;
-        }
-        section li a {
-            color: #F26716;
-        }
-
-        section ul {
-            display: none;
         }
 
         section p {
             width: 625px;
         }
-        section div p{
+        section ul {
+            display: none;
+        }
+        section div p {
             width: 100%;
             max-width: 100%;
         }
-    </Style>
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+    </style>
 </head>
 
 <body>
@@ -90,36 +81,42 @@
 
     <section>
         <div>
-            <p class="TITLE" >Reclamos</p>
+            <p class="TITLE">Cobranzas 
+            </p>
 
-                <li><a href="RCH_001B.html">Tipos de reclamos</a></li>
-                <li><a href="RCH_002B.html">Roles</a></li>
-                <li><a href="RCH_003B.html">Gestores</a></li>
-                <li><a href="RCH_004B.html">Requisitos</a></li>
-                <li><a href="RCH_005B.html">Actividades</a></li>
-                <li><a href="RCH_006B.html">Reclamos</a></li>
-                <li><a href="RCH_007B.html">Atención de reclamos</a></li>
-                <li><a href="RCH_008B.html">Maestro de reclamos</a></li>
-                <li><a href="RCH_009B.html">Histórico de reclamos</a></li>
-
-
-            <p class="TITLE" style="visibility: hidden; display: none;" onclick="toggleList('Agentes')">Agentes y promotores </p>
-            <ul id="Agentes">
-                <li><a href="APH_001B.html">Actividades</a></li>
-                <li><a href="APH_002B.html">Comisiones y metas</a></li>
-                <li><a href="APH_003B.html">Deducciones</a></li>
-                <li><a href="APH_004B.html">Deducciones por promotor</a></li>
-                <li><a href="APH_005B.html">Supervisión de actividades</a></li>
-                <li><a href="APH_009B.html">Actividades finalizadas</a></li>
-                <li><a href="APH_006B.html">Actividades por promotor</a></li>
-                <li><a href="APH_007B.html">Liquidación de comisiones</a></li>
-                <li><a href="APH_008B.html">Consulta de estadísticas</a></li>
+            <p> 
+            </p>
+            <p style="text-align: left; color: #341C8C;" onclick="toggleList('Parámetros')">Parámetros</p>
+            <ul id="Parámetros">
+                <li><a href="CCH_013B.html">Registro y actualización de clientes</a></li>
+                <li><a href="CCH_014B.html">Ingreso / Consulta de cobros</a></li>
+                <li><a href="CCH_015B.html">Actividades por agente de cobro</a></li>
+                <li><a href="CCH_016B.html">Actualización / Manejo de actividades</a></li>
+                <li><a href="CCH_017B.html">Reasignación de la cobranza</a></li>
+                <li><a href="CCH_018B.html">Pago y abono de honorarios</a></li>
+                <li><a href="CCH_019B.html">Consulta de actividades</a></li>
+                <li><a href="CCH_020B.html">Histórico de gestiones</a></li>
             </ul>
+            <li><a href="CCH_001B.html">Operadores de cobro</a></li>
+            <li><a href="CCH_002B.html">Tipos de cobro</a></li>
+            <li><a href="CCH_003B.html">Tipos de documentos</a></li>
+            <li><a href="CCH_004B.html">Actividades de cobro</a></li>
+            <li><a href="CCH_005B.html">Parámetros de calificación</a></li>
+            <li><a href="CCH_006B.html">Actividades por tipo de cobro</a></li>
+            <li><a href="CCH_007B.html">Actividades por tipo de perfil</a></li>
+            <li><a href="CCH_008B.html">Descuentos por agente</a></li>
+            <li><a href="CCH_009B.html">Comisiones</a></li>
+            <li><a href="CCH_011B.html">Tipos de compromisos</a></li>
+            <li><a href="CCH_012B.html">Agentes por zonas</a></li>
+   
+
         </div>
+
         <img class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG" alt="Imagen de la empresa">
+
     </section>
-    <script src="../js/menu.js"></script>
     <script src="../js/opciones.js"></script>
+    <script src="../js/menu.js"></script>
 </body>
 <footer>
     <div>
@@ -129,5 +126,8 @@
     <p>Calle 77 Nº 11-19 Piso 4°,Bogotá D.C.</p>
     <p>Tel (57) 601 - 313 37 75 <a href="http://www.opencard.com" target="_blank">www.opencard.com</a></p>
 
+
+
 </footer>
+
 </html>
