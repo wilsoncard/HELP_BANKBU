@@ -12,18 +12,7 @@ section {
 li {
     list-style: none;
   }
-li  + li {
-    margin-bottom: 5px;
-}
-ul+p{
-    margin-top:0vw;
-}
-p+ul{
-    margin-top:-1vw;
-}
-TABLE + p {
-    margin-top: 1vw;
-}
+
 section div table {
     border-spacing: -1000px; /* Ajusta el valor según desees */
     width: 100%;
