@@ -12,7 +12,6 @@ section {
 li {
     list-style: none;
   }
-
 section div table {
     border-spacing: -1000px; /* Ajusta el valor según desees */
     width: 100%;
@@ -141,7 +140,6 @@ section a:hover {
 body.menu-opened section {
     margin-left: 20vw; /* Ajusta según el ancho de tu menú con unidades relativas */
 }
-
 
 @media (max-width: 950px) {
     footer{
