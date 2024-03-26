@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANKBU®</title>
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-    <div id="menuBtn">
-      <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-    </div>
-  </header>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
     <div id="menuContainer"></div>
-  <script>
+    <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
@@ -27,71 +27,81 @@
       });
   </script>
 
-  <section>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <div>
-              <p class="TITLE">Segmentaci&oacute;n de tarjetas</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO">Lista de resultados: </span> Esta opci&oacute;n, adem&aacute;s de
-        mostrar el resultado de la segmentaci&oacute;n obtenido con base en los criterios de evaluaci&oacute;n
-        seleccionados, ofrece funcionalidades adicionales que permiten Eliminar un cliente de la lista, y
-        efectuar Variaci&oacute;n del extracupo.</p>
-      <p class="PARRAFO">El formulario contiene la opci&oacute;n Eliminar, <a href="#Resultados">Resultados</a>, y dos
-        enlaces en la parte superior para regresar a la opci&oacute;n <a href="MEH_017B.html">Segmentaci&oacute;n de
-          tarjetas</a> o ir a la opci&oacute;n <a href="MEH_017B2.html">Extracupo</a>.
-      <p class="TITLE"><img src="../img/MEF_017B7b.PNG">
-      <p>
-      <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span>  El formulario cuenta
-        con un filtro inicial, que puede ser utilizado para agilizar la b&uacute;squeda
-        de un Criterio.</p>
-      <p class="TITLE"><img src="../img/MEF_017B7a.PNG"></p>
+    <section>
+      <div>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><span>Nombre
-                  lista</span></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Si
-              el usuario invoca el filtro, el sistema le debe permitir ingresar cualquier
-              valor alfanum&eacute;rico de m&aacute;ximo 30 caracteres.</p>
-          </td>
-        </tr>
-      </table>
-      <p class="PARRAFO"><span class="SUBTITULO"><a name="Resultados"></a>Resultados:</span>  Este formulario
-        muestra el resultado de la segmentaci&oacute;n obtenido con base en los criterios
-        de evaluaci&oacute;n seleccionados.
-      </p>
-      <p class="PARRAFO">El formulario contiene la opci&oacute;n Eliminar, y un bot&oacute;n
-        en la parte superior para regresar al formulario principal.
-      <p class="TITLE"><img src="../img/MEF_017B7.PNG"></p>
+        <p class="TITLE">Segmentaci&oacute;n de tarjetas</p>
 
-      <table>
-        <tr>
-          <td class="titletable">
-            <p class="SUBTITULO"><img src="../img/MEF_017B7c.PNG"></p>
-          </td>
-          <td>
-            <p class="PARRAFO">Eliminar selecci&oacute;n: A trav&eacute;s de este bot&oacute;n el sistema
-              permite eliminar los resultados generados en el momento de aplicar la lista.</p>
-          </td>
-        </tr>
-      </table>
-      <p><a href="MEH_017B.html">Segmentaci&oacute;n de tarjetas</a><span> | </span><a href="MEH_017B3.html">
-          Adicionar</a></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Lista de resultados: </span>
+          Esta opci&oacute;n, adem&aacute;s de
+          mostrar el resultado de la segmentaci&oacute;n obtenido con base en
+          los criterios de evaluaci&oacute;n
+          seleccionados, ofrece funcionalidades adicionales que permiten
+          Eliminar un cliente de la lista, y
+          efectuar Variaci&oacute;n del extracupo.</p>
+        <p class="PARRAFO">El formulario contiene la opci&oacute;n Eliminar, <a
+            href="#Resultados">Resultados</a>, y dos
+          enlaces en la parte superior para regresar a la opci&oacute;n <a
+            href="MEH_017B.html">Segmentaci&oacute;n de
+            tarjetas</a> o ir a la opci&oacute;n <a
+            href="MEH_017B2.html">Extracupo</a>.
+          <p class="TITLE"><img src="../img/MEF_017B7b.PNG">
+            <p>
+              <p class="PARRAFO"><span class="SUBTITULO">Filtro:</span> El
+                formulario cuenta
+                con un filtro inicial, que puede ser utilizado para agilizar la
+                b&uacute;squeda
+                de un Criterio.</p>
+              <p class="TITLE"><img src="../img/MEF_017B7a.PNG"></p>
 
-  </section>
-  <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+              <table>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO">Nombre
+                      lista</span></p>
+                </td>
+                <td>
+                  <p class="PARRAFO">Si
+                    el usuario invoca el filtro, el sistema le debe permitir
+                    ingresar cualquier
+                    valor alfanum&eacute;rico de m&aacute;ximo 30
+                    caracteres.</p>
+                </td>
+              </tr>
+            </table>
+            <p class="PARRAFO"><span class="SUBTITULO"><a
+                  name="Resultados"></a>Resultados:</span> Este formulario
+              muestra el resultado de la segmentaci&oacute;n obtenido con base
+              en los criterios
+              de evaluaci&oacute;n seleccionados.
+            </p>
+            <p class="PARRAFO">El formulario contiene la opci&oacute;n Eliminar,
+              y un bot&oacute;n
+              en la parte superior para regresar al formulario principal.
+              <p class="TITLE"><img src="../img/MEF_017B7.PNG"></p>
+
+              <table>
+                <tr>
+                  <td class="titletable">
+                    <p class="SUBTITULO"><img src="../img/MEF_017B7c.PNG"></p>
+                  </td>
+                  <td>
+                    <p class="PARRAFO">Eliminar selecci&oacute;n: A
+                      trav&eacute;s de este bot&oacute;n el sistema
+                      permite eliminar los resultados generados en el momento de
+                      aplicar la lista.</p>
+                  </td>
+                </tr>
+              </table>
+              <p><a href="MEH_017B.html">Segmentaci&oacute;n de tarjetas</a> |
+              </span><a href="MEH_017B3.html">
+                Adicionar</a></p>
+
+          </section>
+          <script src="../js/menu.js"></script>
+        </body>
+        <div id="footerContainer"></div>
+        <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {
@@ -99,4 +109,4 @@
     });
 </script>
 
-</html>
+      </html>

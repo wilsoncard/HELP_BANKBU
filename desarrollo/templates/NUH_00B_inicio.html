@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
 
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-    <style>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+        <style>
         footer {
             position: fixed;
         }
@@ -21,56 +21,59 @@
             width: 100%;
         }
     </style>
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
         document.getElementById('menuContainer').innerHTML = html;
       });
   </script>
-    <section>
-        <div>
-            <p class="TITLE">Inicio:
-            </p>
-            <p>Las opciones aquí contenidas le permiten a la entidad la definición de los parámetros requeridos por el
-                sistema como son las tasas de cambio e indicadores y el calendario con los días hábiles e inhábiles
-                tanto a nivel de la corporación como de la entidad.
-            </p>
+        <section>
+            <div>
+                <p class="TITLE">Inicio:
+                </p>
+                <p>Las opciones aquí contenidas le permiten a la entidad la
+                    definición de los parámetros requeridos por el
+                    sistema como son las tasas de cambio e indicadores y el
+                    calendario con los días hábiles e inhábiles
+                    tanto a nivel de la corporación como de la entidad.
+                </p>
 
-            <a   href=" NUH_043B.html">
-                <h3>Indicadores económicos entidad</h3>
-            </a>
+                <a href=" NUH_043B.html">
+                    <h3>Indicadores económicos entidad</h3>
+                </a>
 
-            <a href="NUH_042B1.html">
-                <h3>Tasas de cambio entidad</h3>
-            </a>
-            <a  href="NUH_042B.html">
-                <h3>Tasas de cambio corporativas</h3>
-            </a>
+                <a href="NUH_042B1.html">
+                    <h3>Tasas de cambio entidad</h3>
+                </a>
+                <a href="NUH_042B.html">
+                    <h3>Tasas de cambio corporativas</h3>
+                </a>
 
-            <a href="NUH_023B.html">
-                <h3>Calendario corporación</h3>
-            </a>
+                <a href="NUH_023B.html">
+                    <h3>Calendario corporación</h3>
+                </a>
 
-
-        </div>
-        <img class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG" alt="Imagen de la empresa">
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+            </div>
+            <img class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG"
+                alt="Imagen de la empresa">
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

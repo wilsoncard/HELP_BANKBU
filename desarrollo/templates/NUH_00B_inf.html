@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANKBU®</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBU®</title>
 
-    <link rel="stylesheet" href="../css/pages.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
-    <style>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+        <style>
         footer {
             position: fixed;
         }
@@ -21,72 +21,75 @@
             width: 100%;
         }
     </style>
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
-        <div id="menuBtn">
-            <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
-        </div>
-    </header>
-      <div id="menuContainer"></div>
-  <script>
+        <header>
+            <img class="logo" src="../img/logoBankbu_.PNG"
+                alt="Logo de Mi Empresa">
+            <div id="menuBtn">
+                <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+            </div>
+        </header>
+        <div id="menuContainer"></div>
+        <script>
     fetch('menu.html')
       .then(response => response.text())
       .then(html => {
         document.getElementById('menuContainer').innerHTML = html;
       });
   </script>
-    <section>
-        <div>
-            <p class="TITLE">Información de clientes:
-            </p>
+        <section>
+            <div>
+                <p class="TITLE">Información de clientes:
+                </p>
 
+                <p>En este bloque se encuentran las opciones desde las cuales la
+                    entidad puede crear clientes naturales o
+                    jurídicos, generar las novedades para la actualización de
+                    sus datos, crear y administrar la información
+                    de sus establecimientos afiliados, expedir los certificados
+                    de retención tanto a clientes y
+                    establecimientos entre otras.
+                </p>
 
-            <p>En este bloque se encuentran las opciones desde las cuales la entidad puede crear clientes naturales o
-                jurídicos, generar las novedades para la actualización de sus datos, crear y administrar la información
-                de sus establecimientos afiliados, expedir los certificados de retención tanto a clientes y
-                establecimientos entre otras.
-            </p>
+                <a href="ESH_006B.html">
+                    <h3>Información de establecimientos</h3>
+                </a>
+                <a href="SOH_004B.html">
+                    <h3>Ingreso de clientes</h3>
+                </a>
+                <a href="MEH_004B.html">
+                    <h3>Categorías cliente</h3>
+                </a>
+                <a href="NUH_044B.html">
+                    <h3>Derogatorio de cédulas</h3>
+                </a>
+                <a href="SCH_001B.html">
+                    <h3>Consulta de clientes</h3>
+                </a>
+                <a href="SCH_075B.html">
+                    <h3>Generar novedad</h3>
+                </a>
+                <a href="SCH_009B.html">
+                    <h3>Administración de novedades</h3>
+                </a>
+                <a href="SCH_032B.html">
+                    <h3>Consulta de clientes con bloqueo persona</h3>
+                </a>
+                <a href="SOH_053B.html">
+                    <h3>Parámetros Centrales</h3>
+                </a>
 
-            <a href="ESH_006B.html">
-                <h3>Información de establecimientos</h3>
-            </a>
-            <a href="SOH_004B.html">
-                <h3>Ingreso de clientes</h3>
-            </a>
-            <a href="MEH_004B.html">
-                <h3>Categorías cliente</h3>
-            </a>
-            <a href="NUH_044B.html">
-                <h3>Derogatorio de cédulas</h3>
-            </a>
-            <a href="SCH_001B.html">
-                <h3>Consulta de clientes</h3>
-            </a>
-            <a href="SCH_075B.html">
-                <h3>Generar novedad</h3>
-            </a>
-            <a href="SCH_009B.html">
-                <h3>Administración de novedades</h3>
-            </a>
-            <a href="SCH_032B.html">
-                <h3>Consulta de clientes con bloqueo persona</h3>
-            </a>
-            <a href="SOH_053B.html">
-                <h3>Parámetros Centrales</h3>
-            </a>
-
-
-        </div>
-        <img class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG" alt="Imagen de la empresa">
-    </section>
-    <script src="../js/menu.js"></script>
-</body>
-<div id="footerContainer"></div>
-<script>
+            </div>
+            <img class="ImagenBankbu" src="../img/bankbu-removebg-preview.PNG"
+                alt="Imagen de la empresa">
+        </section>
+        <script src="../js/menu.js"></script>
+    </body>
+    <div id="footerContainer"></div>
+    <script>
   fetch('footer.html')
     .then(response => response.text())
     .then(html => {

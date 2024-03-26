@@ -27,17 +27,13 @@
   </script>
     <section>
         <div> 
-            <table>
-              <tr> 
-                <td><div> 
+            
                     <p  class="TITLE">Configuraciones</p>
-                  </div></td>
-              </tr>
-            </table>
+                  
             <p  class="PARRAFO">A trav&eacute;s de &eacute;ste formulario Bankb&uacute;&reg; permite a funcionarios conocedores del modelo de la base de datos, definir el alcance de la auditor&iacute;a que la entidad requiera, teniendo en consideraci&oacute;n el costo de la misma en cuanto al consumo de recursos del sistema que de &eacute;sta se derive.</p>
             <p  class="PARRAFO">Una configuraci&oacute;n puede estar  compuesta de una o m&aacute;s tablas o estructuras de la base de datos. El sistema no permite operar m&aacute;s de una configuraci&oacute;n al mismo tiempo, motivo por el cual al generar una configuraci&oacute;n, &eacute;sta entra en operaci&oacute;n y desactiva la anterior:</p>
             <p  class="PARRAFO">El formulario inicial desplegado contiene el enlace <a href="#nuevaconfiguracion" target="_self" >Nueva Configuración</a>.</p>
-            <p class="TITLE"><img src="../img/AUF_001E.PNG"703" ></p>
+            <p class="TITLE"><img src="../img/AUF_001E.PNG"></p>
             
             <p  class="TITLE">Descripci&oacute;n de campos</p>
             <table width=731 >
@@ -68,10 +64,10 @@
               </tr>
             </table>
             
-            <p class="PARRAFO" ><span class="SUBTITULO"><span ><b ><a name="nuevaconfiguracion"></a>Nueva Configuraci&oacute;n</span><span >:</span></span>  El formulario desplegado al invocar el enlace provisto por el sistema en el campo Id del formulario inicial, contiene cinco enlaces 
+            <p class="PARRAFO" ><span class="SUBTITULO"><span ><a name="nuevaconfiguracion"></a>Nueva Configuraci&oacute;n</span><span >:</span></span>  El formulario desplegado al invocar el enlace provisto por el sistema en el campo Id del formulario inicial, contiene cinco enlaces 
             que permiten invocar otros formulario desde los cuales se parametrizan y activan las configuraciones, &eacute;stos son: </span><a href="#agregartabla" target="_self" >Agregar tabla</a><span class="PARRAFO">, <a href="#estimarcrecimiento" target="_self" >Estimar crecimiento de table spaces</a>, <a href="#descargarscript" target="_self" >Descargar Script</a>, <a href="#generarconfiguracion" target="_self" >Generar Configuración</a>, <a href="#verificarestado" target="_self" >Verificar estado  configuración</a> y Eliminar Configuraci&oacute;n; para &eacute;ste &uacute;ltimo enlace no se requiere documentaci&oacute;n adicional, dado que la &uacute;nica funci&oacute;n es la de quitar la configuraci&oacute;n desde la que se activa. </span></p>
             <p class="PARRAFO" >El formulario de Tablas  contiene los enlaces Actualizar</span> ,<span class="PARRAFO"> Eliminar y Detalle.</span></p>
-             <p class="TITLE"><img src="../img/AUF_001E1.PNG"679" "></p>
+             <p class="TITLE"><img src="../img/AUF_001E1.PNG"></p>
            
             <p  class="TITLE">Descripci&oacute;n de campos</p>
             <table width=731 >
@@ -90,7 +86,7 @@
               </tr>
             </table>
            
-            <p class="PARRAFO" ><span class="SUBTITULO"><b ><span >Actualizar</span><span >:</span></span><span > Esta funcionalidad se activa siempre y </span><span >cuando el esquema tenga estructuras o tablas asociadas, si </span><span > el usuario invoca el enlace Actualizar, se depliega</span><span > un wisard de </span>  <span >d</span><span >os pasos, mediante el cual puede modificarse los campos a auditar de la estructura desde la que se invoca, as&iacute; como los </span><span >datos del table space</span><span > de la confi</span><span >guraci&oacute;n generada.</span></span></p>
+            <p class="PARRAFO" ><span class="SUBTITULO"><span >Actualizar</span><span >:</span></span><span > Esta funcionalidad se activa siempre y </span><span >cuando el esquema tenga estructuras o tablas asociadas, si </span><span > el usuario invoca el enlace Actualizar, se depliega</span><span > un wisard de </span>  <span >d</span><span >os pasos, mediante el cual puede modificarse los campos a auditar de la estructura desde la que se invoca, as&iacute; como los </span><span >datos del table space</span><span > de la confi</span><span >guraci&oacute;n generada.</span></span></p>
             
             <p class="TITLE"><img src="../img/AUF_001E2.PNG"></p>
             
@@ -136,7 +132,7 @@
                 <td   class="PARRAFO" ><p>Campo que posee lista de valores tipo combo de la que debe seleccionarse el nombre que identifica el espacio del disco en el que se almacenan los &iacute;ndices asociados a la auditor&iacute;a.</td>
               </tr></p>
             </table>
-            <p class="PARRAFO" ><span class="SUBTITULO"><span><b >Detalle</span><span >:</span></span><span > Si el usuario invoca el enlace </span><span >Detalle</span><span >, </span><span >el siguiente formulario: </span></span></p>
+            <p class="PARRAFO" ><span class="SUBTITULO">Detalle</span><span >:</span></span><span > Si el usuario invoca el enlace </span><span >Detalle</span><span >, </span><span >el siguiente formulario: </span></span></p>
             <p class="TITLE"><img src="../img/AUF_001E4.PNG"></p>
             <p class="PARRAFO"><a name="agregartabla"></a><span class="SUBTITULO">Agregar tabla</span><span >:</span>  El sistema muestra la primera estructura o tabla de la base de datos, seg&uacute;n el orden alfab&eacute;tico ascendente de las mismas. Bankb&uacute;&reg; provee un wisard de tres pasos, en el primero, el usuario debe proceder a seleccionar, una a una, las estructuras que requiera incluir dentro del presente esquema, el formulario provee el filtro Nombre tabla, en el que, utilizando el s&iacute;mbolo &quot;%&quot; a manera de comod&iacute;n, es posible consultar la base de datos para ubicar la estructura requerida. En el segundo paso, debe indicar, a cu&aacute;les campos de la estructura seleccionada, diferentes a llaves primaria, requiere auditar; as&iacute; mismo, en &eacute;ste formulario el sistema  provee el filtro Nombre columna, que opera igual que el anteriormente descrito, pero a nivel de los campos de la estructura o tabla y, en el tercer y &uacute;ltimo paso, la data asociada al table space correspondiente.</p>
             <p class="TITLE"><img src="../img/AUF_001E5.PNG"></p>
@@ -210,7 +206,7 @@
             <p class="PARRAFO" ><span class="SUBTITULO"><a name="descargarscript"></a>Descargar Script<span >:</span></span>  <span class="style3">Al momento de activar &eacute;ste enlace el sistema despliega una ventana emergente, mediante la cual se le permite al usuario ubicar y .... el archivo mediante el cual ....</span></span></p>
             <p class="TITLE"><img src="../img/AUF_001E9.PNG"></p>
             <p   class="TITLE">Descripci&oacute;n de campos</p>
-            <table width=731 >
+            <table >
               <tr>
                 <td><p class="TITLE">Aplica el tener que describir &eacute;ste formulario?</p></td>
               </tr>
@@ -239,7 +235,7 @@
                 <td   class="PARRAFO" ><p>Campo de salida que muestra la condici&oacute;n de cada uno de los trigger definidos.</p></td>
               </tr>
             </table>
-            .
+            
         </section>
     <script src="../js/menu.js"></script>
 </body>
