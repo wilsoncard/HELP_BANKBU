@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBU®</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/ACQUIRER-logo.JPG" type="image/x-icon">
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="../img/logoBankbu_.PNG" alt="Logo de Mi Empresa">
+      <div id="menuBtn">
+        <img class="TITLE" src="../img/menu.PNG" alt="Botón de Menú ">
+      </div>
+    </header>
+    <div id="menuContainer"></div>
+    <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menuContainer').innerHTML = html;
+      });
+  </script>
+
+    <section>
+      <div>
+
+        <p class="TITLE">Historia</p>
+        <p class="PARRAFO">Formulario que se invoca desde la<a href="SCH_060B.html"> Consulta centralizada de tarjeta</a>, ilustra, cronológicamente, por año / mes,
+             desde que se activó la tarjeta por primera vez, los datos consolidados de los principales movimientos monetarios de la misma.
+              Adicionalmente, se dispone de los enlaces: Movimiento a facturación, Pagos globales, Débitos automáticos y Pagos en cheque.
+               Si se desea conocer información adicional, basta con activar el enlace Detalle, cuyo formulario se ilustra más abajo:</p>
+            <p class="TITLE"><img src="../img/SCH_069.PNG"></p>
+            <p class="TITLE"><img src="../img/SCH_069B1.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Movimiento a facturación:</span> Seleccionando de la funcionalidad de calendario la fecha 
+            de facturación para la que se requiere conocer los movimientos de la tarjeta e indicando el código de la moneda oficial, el sistema
+             retorna la información correspondiente, si eventualmente se desea observar a .</p>
+             <p class="TITLE"><img src="../img/SCH_069B2.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Pagos globales: </span>En el formulario invocado se ilustran los registros de los diferentes
+             pagos que evidencia la tarjeta, adicionalmente, se cuenta con el enlace Desglose pagos, que permite visualizar con más detalle los
+              datos que componen cada pago:</p>
+              <p class="TITLE"><img src="../img/SCH_069B3.PNG"></p>
+              <p class="TITLE"><img src="../img/SCH_069B4.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Débitos automáticos: </span>En el formulario invocado se ilustran los registros de los
+             diferentes de los débitos realizados a las cuentas del tarjetahabiente y luego aplicados como pagos a su tarjeta, si se tienen
+              registros de esos movimientos, es posible conocer información adicional mediante el enlace Detalle:</p>
+              <p class="TITLE"><img src="../img/SCH_069B5.PNG"></p>
+        <p class="PARRAFO"><span class="SUBTITULO">Pagos en cheque: </span>En el formulario invocado se ilustran los registros de los diferentes
+             pagos que fueron efectuados mediante cheques.</p>
+
+      </div>
+        </section>
+        <script src="../js/menu.js"></script>
+
+        <div id="footerContainer"></div>
+        <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+</script>
+      </body>
+
+    </html>
